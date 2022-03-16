@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private enum COLOR {
-        R, G, B, M, C, Y, OFF, COLOR_NUM
+        Red, Green, Blue, Magenta, Cyan, Yellow, OFF, COLOR_NUM
     }
     private int[][] color = {{255,0,0},{0,255,0},{0,0,255},{228,0,127},{0,161,233},{255,217,0},{0,0,0}};
 
@@ -73,37 +73,37 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.r_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                trySetLED(color[COLOR.R.ordinal()]);
+                trySetLED(color[COLOR.Red.ordinal()]);
             }
         });
         findViewById(R.id.g_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                trySetLED(color[COLOR.G.ordinal()]);
+                trySetLED(color[COLOR.Green.ordinal()]);
             }
         });
         findViewById(R.id.b_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                trySetLED(color[COLOR.B.ordinal()]);
+                trySetLED(color[COLOR.Blue.ordinal()]);
             }
         });
         findViewById(R.id.m_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                trySetLED(color[COLOR.M.ordinal()]);
+                trySetLED(color[COLOR.Magenta.ordinal()]);
             }
         });
         findViewById(R.id.c_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                trySetLED(color[COLOR.C.ordinal()]);
+                trySetLED(color[COLOR.Cyan.ordinal()]);
             }
         });
         findViewById(R.id.y_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                trySetLED(color[COLOR.Y.ordinal()]);
+                trySetLED(color[COLOR.Yellow.ordinal()]);
             }
         });
         findViewById(R.id.off_btn).setOnClickListener(new View.OnClickListener() {
